@@ -1,0 +1,25 @@
+node default {
+user { 't920560':
+        ensure     => present,
+        managehome => true,
+        shell      => '/bin/bash',
+        home       => '/home/t920560',
+}
+ssh_authorized_key { 'rsa-key-t920560':
+        user => 't920560',
+        type => 'ssh-rsa',
+        key  => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC5Mc9k6lkDDEEwQv5Mxj7HYR2cci4F7Lg5WQ0w1ZZDd3IB3QsZ8lJ8Rde3Vj9gzhpqkjvyZXSEJnjxzIoR2G5yoo/JsDhKkO0FZSS64qY98mhsGMzihnyhkRk9QEUH/RQJYd0NmQTqyCc6Otqi6fyO1PtZeeZaofOXi+VQbXXo2diRN3ZAYIuZ4c1pl3PXDIVDapH98Ju+ZRrTIJn6aLD4hjpDnKpOObIbXfQ33Ps1Z8p7yz9MTp0Z2Ub1CJnSZKZi6PP+mL8zUb9ok6HL78Od2cxX8PFnV/x8tP8FsT86kkMi9hugXJNJ4vmxuoDF3lDr+nvYVku82x9jetDDKKEh',
+}
+
+user { 't106113':
+        ensure     => present,
+        managehome => true,
+        shell      => '/bin/bash',
+        home       => '/home/t106113',
+}
+ssh_authorized_key { 'rsa-key-t106113':
+        user => 't106113',
+        type => 'ssh-rsa',
+        key  => 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCtPnwAKQJoZpbNgfcBYOzdYTM0XqSR07kCzVj1TpMEZUtePcb6x3GWgV89rxhknYeQfnFRJjz20Evxz2QBw5YGmH58xvpvEwGH66xyjEGguY+Y3PhmV9z2P0k29F7ZHA74Fnsyon7tWPf97mQKHNdphpvKJhICgX0yM60eIaqrcD1+VRZsP/QVEPzqWK9JXjkthcQo2wwUi5JTjKaEFrOISJ/LglYpctoh5M0xbfOa8UmuewWZUIa7BhrVug2Kua8EkgkT8ihpEAh6h/Pzieya6u6QFqndS93SeiaOwrYGqsEZLLuqK3XnNLcVz0ByIA+1rGH9YIulQFbhD+uP0Mp1',
+}
+}
